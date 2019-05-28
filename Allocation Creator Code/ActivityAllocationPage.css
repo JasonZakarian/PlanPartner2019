@@ -1,0 +1,114 @@
+.activityButtonBox{
+    display: grid;
+    width: 70%;
+    margin:0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+.activityCategoryTitleBox{
+    display: flex;
+    align-items:center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    justify-content: center;
+}
+.activityPickerText{
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 60%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bottomBar{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    margin: 0 auto;
+    margin-top:2rem;
+}
+.businessPlanReview{
+    margin-top:3rem;
+    margin-bottom:1rem;
+}
+.checkBoxLabel{
+    margin-left:30%;
+    display: flex;
+    justify-content:flex-start;
+}
+.inputBox{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.metricsBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap:2rem;
+}
+.mobileStepper{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.pickerImage{
+    height:20rem;
+}
+.pickerImageBox{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.totalsBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:2rem;
+    width:40%;
+    margin:0 auto;
+    justify-items: center;
+}
+
+@media screen and (max-width:1200px){
+    .activityPickerText{
+        grid-template-columns: 1fr;
+    }
+    .allocationBox
+        .activityButtonBox{
+            grid-template-columns: 1fr 1fr;
+            width:100%
+    }
+    .metricsBox{
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+@media screen and (max-width: 900px){
+    .activityButtonBox{
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+    .activityCategoryTitleBox{
+        width:70%;
+    }
+    .activityPickerText{
+        width:100%;
+    }
+    .totalsBox{
+        width:90%;
+    }
+}
+@media screen and (max-width:600px){
+    .allocationBox
+        .activityButtonBox{
+            grid-template-columns: 1fr;
+            
+        }
+    .checkBoxLabel{
+        margin-left:0%;
+    }
+    .pickerImage{
+        height:13rem;
+    }
+}     
